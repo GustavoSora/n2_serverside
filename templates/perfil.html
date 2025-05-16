@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+</head>
+<body>
+    <h1>Bem-vindo, {{ usuario.nome }}!</h1>
+    <p>Nível: {{ usuario.nivel }}</p>
+    <h2>Itens</h2>
+    <ul>
+        {% for item in itens %}
+            <li>{{ item.nome_item }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Adicionar Item</h2>
+    <form action="/adicionar_item" method="post">
+        Nome do item: <input type="text" name="item_nome" required><br>
+        <input type="submit" value="Adicionar Item">
+    </form>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>

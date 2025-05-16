@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>Login</h1>
+            <form action="/login" method="post" class="campos-login">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+
+                <input type="submit" value="Entrar" class="btn-login">
+            </form>
+            <div class="cadastro">
+                <p><span class="semconta">Não tem uma conta?<span> <a href="cadastro.html"> <span class="cadastrese">Cadastre-se!</span></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
